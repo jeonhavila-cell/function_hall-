@@ -1,0 +1,3 @@
+-- Spring JPA creates/updates the tables automatically.
+-- Create the database manually if your MySQL user cannot use createDatabaseIfNotExist:
+-- CREATE DATABASE functionhall;

@@ -1,0 +1,1 @@
+-- Sample halls are inserted by DataLoader.java.

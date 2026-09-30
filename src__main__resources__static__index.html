@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Function Hall Booking</title><link rel="stylesheet" href="style.css"></head>
+<body><header><h1>🏛️ HallBook</h1><p>Find and book your function hall</p></header>
+<main><section class="filters"><input id="location" placeholder="Search location"><button onclick="searchHalls()">Search</button><button onclick="loadHalls()">All Halls</button></section>
+<section id="halls" class="grid"></section>
+<section id="booking" class="panel hidden"><h2>Book a Hall</h2><form onsubmit="book(event)">
+<input id="hallId" type="hidden"><input id="name" placeholder="Your name" required><input id="email" type="email" placeholder="Email" required>
+<select id="eventType" required><option value="">Event type</option><option>Wedding</option><option>Birthday</option><option>Corporate</option><option>Other</option></select>
+<input id="date" type="date" required><button>Confirm Booking</button></form><p id="message"></p></section>
+<section class="panel"><h2>My Bookings</h2><input id="customerEmail" type="email" placeholder="Enter booking email"><button onclick="myBookings()">View</button><div id="bookings"></div></section></main>
+<script src="app.js"></script></body></html>
